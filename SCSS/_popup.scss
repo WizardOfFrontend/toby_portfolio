@@ -32,6 +32,7 @@
   &-left {
     margin: 10px;
   }
+
   &-right {
     margin: 10px;
     .btn-wrapper {
@@ -40,10 +41,18 @@
       grid-gap: 4rem;
     }
   }
+
+  &-features{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
   &-img {
     width: 100%;
   }
+
   &-text {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
   }
 }

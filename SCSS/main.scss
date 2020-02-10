@@ -2,6 +2,7 @@
 @import "utilities";
 @import "item_grid";
 @import "popup";
+@import "bg_video";
 
 // General Styles
 * {
@@ -292,7 +293,9 @@ img {
 
 // Contact Page
 #contact {
+  
   &-me {
+    background-color: rgba($light-color, 0.3);
     .text-fields {
       display: grid;
       grid-template-areas:

@@ -281,10 +281,28 @@
       display: grid;
       grid-template-columns: auto auto auto;
       grid-gap: 4rem; }
+  .popup-features {
+    font-size: 1.5rem;
+    margin-top: 1rem; }
   .popup-img {
     width: 100%; }
   .popup-text {
-    margin-bottom: 20px; }
+    margin-bottom: 10px;
+    font-size: 1.3rem; }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.45;
+  overflow: hidden; }
+  .bg-video-content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 * {
   margin: 0;
@@ -474,27 +492,28 @@ img {
     border-radius: 50%;
     margin-right: 0.5rem; }
 
-#contact-me .text-fields {
-  display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
-  grid-gap: 1.2rem;
-  margin-bottom: 1.2rem; }
-  #contact-me .text-fields .name-input {
-    grid-area: name; }
-  #contact-me .text-fields .subject-input {
-    grid-area: subject; }
-  #contact-me .text-fields .email-input {
-    grid-area: email; }
-  #contact-me .text-fields .phone-input {
-    grid-area: phone; }
-  #contact-me .text-fields .message-input {
-    grid-area: message;
-    height: 100px; }
-  #contact-me .text-fields .text-input {
-    padding: 0.5rem 1rem; }
-
-#contact-me button[type="submit"] {
-  width: 50%; }
+#contact-me {
+  background-color: rgba(244, 244, 244, 0.3); }
+  #contact-me .text-fields {
+    display: grid;
+    grid-template-areas: "name email" "subject phone" "message message";
+    grid-gap: 1.2rem;
+    margin-bottom: 1.2rem; }
+    #contact-me .text-fields .name-input {
+      grid-area: name; }
+    #contact-me .text-fields .subject-input {
+      grid-area: subject; }
+    #contact-me .text-fields .email-input {
+      grid-area: email; }
+    #contact-me .text-fields .phone-input {
+      grid-area: phone; }
+    #contact-me .text-fields .message-input {
+      grid-area: message;
+      height: 100px; }
+    #contact-me .text-fields .text-input {
+      padding: 0.5rem 1rem; }
+  #contact-me button[type="submit"] {
+    width: 50%; }
 
 #contact-info .contact-info {
   display: grid;
