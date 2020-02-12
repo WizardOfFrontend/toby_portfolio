@@ -16,6 +16,7 @@ body {
   line-height: 1.6;
   background: #fff;
   padding: 30px;
+  height: 80%;
 }
 
 a {
@@ -42,7 +43,7 @@ img {
   &-home {
     background: linear-gradient(to right, rgba(255, 204, 0, 0.5), rgba(255, 230, 128, 0.3)),
       $bg-img no-repeat center right/cover;
-    height: 95vh;
+    height: 90vh;
     color: $dark-color;
 
     // Header Content
@@ -293,7 +294,6 @@ img {
 
 // Contact Page
 #contact {
-  
   &-me {
     background-color: rgba($light-color, 0.3);
     .text-fields {
