@@ -1,0 +1,35 @@
+// Tablets & smaller
+@media (max-width: 1310px) {
+  #header-home {
+    // height: 30rem;
+    #main-nav {
+      display: grid;
+      grid-template-rows: 2;
+      grid-template-columns: 1;
+      justify-content: center;
+      #logo {
+        text-align: center;
+      }
+      .certified {
+        transform: translateX(0);
+        text-align: center;
+        margin-top: 0px;
+      }
+      // .logo-container {
+      //   display: flex;
+      //   flex-direction: row;
+      //   justify-content: center;
+      // }
+    }
+  }
+}
+// Tablets & smaller
+@media (max-width: 800px) {
+  #header-home {
+    height: 30rem;
+
+    .header-content {
+      padding-top: 5rem;
+    }
+  }
+}
