@@ -1,7 +1,7 @@
-@import "config";
+@import 'config';
 .items {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
   grid-gap: 1.5rem;
 }
@@ -12,7 +12,7 @@
 
   &::after {
     // we are going to use overlay
-    content: "";
+    content: '';
     position: absolute;
     display: block;
     background: inherit;
@@ -47,7 +47,7 @@
   }
 
   &-image:before {
-    content: "";
+    content: '';
     display: block;
     padding-top: 75%;
     overflow: hidden;
@@ -89,10 +89,10 @@
 
   &-text-btn {
     text-transform: uppercase;
-    font-size: 1l5;
+    font-size: 1rem;
     opacity: 0.7;
     padding: 10px 40px;
-    margin-top: 50px;
+    margin-top: 100px;
     letter-spacing: 0.2rem;
   }
 }
