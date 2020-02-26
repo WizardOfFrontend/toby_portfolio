@@ -1,9 +1,8 @@
-@import "config";
-@import "utilities";
-@import "item_grid";
-@import "popup";
-@import "bg_video";
-@import "media";
+@import 'config';
+@import 'utilities';
+@import 'item_grid';
+@import 'popup';
+@import 'bg_video';
 
 // General Styles
 * {
@@ -13,7 +12,7 @@
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   line-height: 1.6;
   background: #fff;
   padding: 30px;
@@ -55,12 +54,6 @@ img {
       h1 {
         font-size: 3.5rem;
         line-height: 1.2;
-
-        .certified-text {
-          color: $accent-color;
-          transform: translateX(10rem);
-          margin-bottom: 1rem;
-        }
       }
     }
   }
@@ -71,21 +64,26 @@ img {
   }
 }
 
-// Logo
-#logo {
-  font-family: "Great Vibes";
-  font-size: 4rem;
-  font-weight: bold;
-  color: $accent-color;
-}
+.logo-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 10px;
 
-// Certified
-.certified {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: $accent-color;
-  margin-top: 2.7rem;
-  transform: translateX(-12rem);
+  // Logo
+  #logo {
+    font-family: 'Great Vibes';
+    font-size: 4rem;
+    font-weight: bold;
+    color: $accent-color;
+  }
+
+  // Certified
+  .certified {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $accent-color;
+    margin-top: 2.7rem;
+  }
 }
 
 // Main Nav
@@ -130,8 +128,8 @@ img {
       margin-top: 50px 0;
       display: grid;
       grid-template-areas:
-        "bioimage bio bio"
-        "ct1 ct2 ct3";
+        'bioimage bio bio'
+        'ct1 ct2 ct3';
       grid-gap: 1.2rem;
     }
 
@@ -173,7 +171,7 @@ img {
     }
 
     // image
-    div[class^="cert-"] {
+    div[class^='cert-'] {
       img {
         height: 200px;
         width: 200px;
@@ -184,6 +182,7 @@ img {
   &-work-exp {
     ul {
       li {
+        // white vertical line
         list-style: none;
         position: relative;
         width: 6px;
@@ -191,13 +190,10 @@ img {
         padding-top: 50px;
         background: #fff;
 
-        & h3 {
-          color: $accent-color;
-        }
         // Right Side
         &:nth-child(odd) div {
           left: 40px;
-          transform: translate(200px, 0);
+          transform: translate(200px, 0); // 처음 출발지점
 
           // Right Side Arrows
           &:before {
@@ -210,7 +206,7 @@ img {
         // Left Side
         &:nth-child(even) div {
           left: -550px;
-          transform: translate(-200px, 0);
+          transform: translate(-200px, 0); // 처음 출발지점
 
           // Left Side Arrows
           &:before {
@@ -225,17 +221,17 @@ img {
           transform: none;
         }
 
-        // Dots
+        // Dots in the white vertical line
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           left: 50%;
           bottom: 0;
           width: 25px;
           height: 25px;
           background: $secondary-color;
-          transform: translate(-50%);
           border-radius: 50%;
+          transform: translate(-50%);
           transition: background 0.5s ease-in-out;
         }
 
@@ -246,11 +242,12 @@ img {
           width: 500px;
           padding: 1rem;
           background: $secondary-color;
+          border-radius: 10px;
           transition: all 0.5s ease-in-out;
 
           // Arrow Base
           &:before {
-            content: "";
+            content: '';
             position: absolute;
             bottom: 5px;
             width: 0;
@@ -261,7 +258,15 @@ img {
       }
     }
   }
-
+  &-tech-exp {
+    li {
+      margin-bottom: 2rem;
+      border-bottom: #444 solid 1px;
+    }
+    li:last-child {
+      border: none;
+    }
+  }
   &-testimonials {
     .testimonials {
       display: grid;
@@ -300,9 +305,9 @@ img {
     .text-fields {
       display: grid;
       grid-template-areas:
-        "name email"
-        "subject phone"
-        "message message";
+        'name email'
+        'subject phone'
+        'message message';
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
@@ -328,7 +333,7 @@ img {
       }
     }
 
-    button[type="submit"] {
+    button[type='submit'] {
       width: 50%;
     }
   }
@@ -382,3 +387,4 @@ img {
     }
   }
 }
+@import 'media';
